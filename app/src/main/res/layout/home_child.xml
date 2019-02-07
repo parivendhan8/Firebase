@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/menu_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/index" />
+
+        <TextView
+            android:id="@+id/menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/menu_item_image"
+            android:padding="15dp"
+            android:text="Fruits"
+            android:textColor="@android:color/white" />
+
+
+        <CheckBox
+            android:id="@+id/favourite_checkBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/menu_item_image"
+            android:layout_alignBottom="@+id/menu_item_image"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:button="@drawable/favourite_selector" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
